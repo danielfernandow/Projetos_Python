@@ -9,10 +9,10 @@ url = 'https://www.netflix.com/browse'
 browser.get(url)
 
 id = browser.find_element_by_name('userLoginId')
-id.send_keys('d5fdasilva@gmail.com')
+id.send_keys('userlogin')
 time.sleep(1)
 password = browser.find_element_by_name('password')
-password.send_keys('danield5')
+password.send_keys('password')
 password.submit()
 time.sleep(3)
 person = browser.find_element_by_xpath('//*[@id="appMountPoint"]/div/div/div[1]/div[1]/div[2]/div/div/ul/li[1]/div/a/span')
