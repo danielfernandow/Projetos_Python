@@ -1,13 +1,11 @@
 from selenium import webdriver
-#from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver import Chrome
+from selenium.webdriver import Firefox
 import pandas as pd
 import time
 
 path = '/Downloads/chromedriver_linux64(1)/webdriver'
 
-browser = webdriver.Chrome
+browser = Firefox()
 pages = 3
 url = 'http://books.toscrape.com/catalogue/page-1.html'
 
@@ -15,7 +13,7 @@ def getdata(start_url, pgs):
     current = 0
     urls = browser.get(start_url)
     data = {}
-    df.pd.DataFrame(columns =['Title', 'Price', 'Stock', 'Star'])
+    df = pd.DataFrame(columns =['Title', 'Price', 'Stock', 'Star'])
     dictionary = {'One': 1, 'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5}
     while current < pages:
         books = browser.find_elements_by_css_selector('ol.row')
