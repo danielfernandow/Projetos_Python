@@ -3,8 +3,6 @@ from selenium.webdriver import Firefox
 import pandas as pd
 import time
 
-path = '/Downloads/chromedriver_linux64(1)/webdriver'
-
 browser = Firefox()
 pages = 3
 url = 'http://books.toscrape.com/catalogue/page-1.html'
