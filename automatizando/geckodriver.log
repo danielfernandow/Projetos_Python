@@ -5426,3 +5426,4 @@ JavaScript warning: http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min
 1589846174939	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
 1589846174939	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 Exiting due to channel error.
+1589848277747	Marionette	INFO	Stopped listening on port 45697
